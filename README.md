@@ -24,4 +24,4 @@ With this setup, you can run VS Code directly in your browser without installing
    ```bash
    docker-compose up -d
 >[!NOTE]
->Or deploy as a stack in [portainer]([https://github.com/coder/code-server](https://www.portainer.io)) web-interface
+>Or deploy as a stack in [portainer]([https://github.com/coder/code-server](https://www.portainer.io) web-interface
