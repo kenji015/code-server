@@ -1,0 +1,16 @@
+version: "3.7"
+services:
+  code-server:
+    image: lscr.io/linuxserver/code-server:latest
+    container_name: code-server
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Berlin #Change to your Timezone
+      - PASSWORD=2fswf-3252asda #Change password
+    volumes:
+      - your/path/to/code-server-data:/config/workspace #Change the left path to your local path
+      - your/path/to/config:/config #Change the left path to your local path
+    ports:
+      - 8443:8443 #You may also change the port
+    restart: unless-stopped #Doesnt Stop unless it is stopped manually
